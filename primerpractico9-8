@@ -1,0 +1,29 @@
+package primerpractico;
+
+
+import javax.swing.*;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		int x = 0;
+		while(x<10) {
+		
+		String nombre = JOptionPane.showInputDialog("Escriba su nombre por favor");
+		int edad = Integer.parseInt(JOptionPane.showInputDialog("Escriba su edad por favor"));
+		
+		if(edad==0) {
+			throw new RuntimeException("0 no es válido, programa finalizado");
+		}
+		if(edad>=18) {
+		System.out.println(nombre + " es mayor de edad");
+		}
+		else {
+		System.out.println(nombre + " es menor de edad");
+		}
+	}	
+	}
+}

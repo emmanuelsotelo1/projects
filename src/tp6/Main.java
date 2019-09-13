@@ -8,9 +8,9 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Ingrese la cantidad de contraseñas a generar: ");
+		System.out.println("¿Que cantidad de contraseñas desea crear? ");
 		int cant = sc.nextInt();
-		System.out.println("Ingrese la longitud de las contraseñas: ");
+		System.out.println("¿Que longitud desea que tenga las contraseñas? ");
 		int longitud = sc.nextInt();
 		Contraseña[] contraseñas = new Contraseña[cant];
 

@@ -1,6 +1,6 @@
 package tp8ej2;
 
-public class Coche implements Vehiculo{
+public class Coche implements Vehiculo {
 	
 	private int velocidad = 0;
 

@@ -1,7 +1,7 @@
 package tp8ej2;
 
 public interface Vehiculo {
-
+	
 	int VELOCIDAD_MAXIMA = 120;
 
 	void frenar(int frenar);
@@ -11,5 +11,5 @@ public interface Vehiculo {
 	String plazas();
 	
 	int getVelocidad();
-	
+
 }

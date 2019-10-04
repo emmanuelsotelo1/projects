@@ -1,10 +1,12 @@
 package tp8ej2;
-import java.util.Scanner;
-public class Menu {
-	
-	public static void Menu(){
 
-        Scanner sc = new Scanner(System.in);
+import java.util.Scanner;
+
+public class Menu {
+
+	public static void main(String[] args) {
+		
+Scanner sc = new Scanner(System.in);
         
         int cantidad=0, decision=0,veloMoto=0, veloAuto=0, opcion=0, i=0;
         
@@ -64,7 +66,7 @@ public class Menu {
                             veloAuto = sc.nextInt();
                             vehiculos[i] = new Coche(veloAuto);
                             do{
-                           	 System.out.println("AHORA ELIJA:\n 1: Acelerar\\n 2: Frenar\\n 3: Cantidad de plazas\\n 4: Velocidad actual\\n 5: Finalizar");
+                           	 System.out.println("AHORA ELIJA:\n 1: Acelerar\n 2: Frenar\n 3: Cantidad de plazas\n 4: Velocidad actual\n 5: Finalizar");
                                 decision=sc.nextInt();
                                 if (decision==1){
                                 	System.out.println("¿Cuantos kmph quiere acelerar?");
@@ -110,6 +112,8 @@ public class Menu {
         }while(opcion2 == true);
         
 
-    }
+		
+
+	}
 
 }

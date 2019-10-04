@@ -1,7 +1,7 @@
 package tp8ej2;
 
 public class Coche implements Vehiculo {
-	
+
 	private int velocidad = 0;
 
 	public Coche(int velocidad) {
@@ -38,7 +38,7 @@ public class Coche implements Vehiculo {
 
 	@Override
 	public int getVelocidad() {
-		
+
 		return this.velocidad;
 	}
 

@@ -1,21 +1,26 @@
 package tp8ej2;
 
+import java.util.Scanner;
+
 public class Coche implements Vehiculo {
 
 	private int velocidad = 0;
 
 	public Coche(int velocidad) {
-		this.velocidad = velocidad;
+		this.acelerar(velocidad);
 	}
 
 	@Override
 	public void frenar(int frenar) {
-		int a = this.velocidad - frenar;
-		if (a >= 0) {
-			this.velocidad -= frenar;
-		} else {
-			System.out.println("No estas frenando nada");
-		}
+		int a = this.velocidad-frenar;
+
+        this.velocidad-=frenar;
+		
+		if (this.velocidad>120) {
+            System.out.println("CUIDADO, la velocidad máxima ha sido superada.");
+        }else {
+        	System.out.println("Acelerando...");
+        }
 	}
 
 	@Override

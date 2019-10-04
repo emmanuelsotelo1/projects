@@ -6,9 +6,13 @@ public class Moto implements Vehiculo {
 
 	public Moto(int velocidad) {
 
-		this.velocidad = velocidad;
+		this.acelerar(velocidad);
 	}
-
+	
+	private void setVelocidad(int velocidad2) {
+		this.velocidad=velocidad2;
+	}
+	
 	@Override
 	public void frenar(int frenar) {
 		int a = this.velocidad - frenar;
